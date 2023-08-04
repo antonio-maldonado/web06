@@ -19,18 +19,22 @@
         </div>
     </main>
 
-    <footer class="container text-center">
+    <footer class="container text-center vh-20">
         <div class="row">
             <div class="col-4">
-                <h3 onclick="changeColor(this,'green')">Cambia mi color</h3>
+                <h3 id="green-color" onclick="changeColor(this,'green')">Cambia mi color</h3>
             </div>
             <div class="col-4">
-                <h3 onclick="changeColor(this,'pink')">Cambia mi color</h3>
+                <h3 id="red-color" onclick="changeColor(this,'pink')">Cambia mi color</h3>
             </div>
             <div class="col-4">
-                <h3 onclick="changeColor(this,'purple')">Cambia mi color</h3>
+                <h3 id="purple-color" onclick="changeColor(this,'purple')">Cambia mi color</h3>
+            </div>
+            <div class="col-4">
+                <h3 id="user-color" onclick="changeColorPrompt(this)">Elige tu color</h3>
             </div>
         </div>
+        <button type="submit" class="btn btn-danger" onclick="resetColor()">Reiniciar</button>
     </footer>
 
      <!-- Bootstrap script -->
