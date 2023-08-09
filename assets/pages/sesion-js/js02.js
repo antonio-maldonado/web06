@@ -240,9 +240,9 @@ console.log("###############################################################");
 
 function saludo1( numeroSaludo , numero ) {
     if(  numeroSaludo === numero)
-        return console.log("Saludo " + numeroSaludo + " ");
+        console.log("Saludo " + numeroSaludo );
     else
-        return console.log("Saludo " + numeroSaludo + " ") +  saludo1( numeroSaludo+1 , numero );
+        console.log("Saludo " + numeroSaludo ) +  saludo1( numeroSaludo+1 , numero );
 }
 
 saludo1(1,30);
