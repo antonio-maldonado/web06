@@ -109,5 +109,24 @@ const numeroEstacion = 7;
 
 console.log("###############################################################");
 
-console.log( estacionSwitch( prompt("Ingrese el numero de mes") ) );
-console.log( estacionIfElse( prompt("Ingrese el numero de mes")  ) );
+// console.log( estacionSwitch( prompt("Ingrese el numero de mes") ) );
+// console.log( estacionIfElse( prompt("Ingrese el numero de mes")  ) );
+
+// --------------- mini ejercicio  ----------------------------
+/*
+ Preguntar con prompt la edad del usuario: 20
+ Si es >= 18 indicar en la consola "El usuario es mayor de edad";
+ Si no cumple con la condición "El usuario no es mayor de edad".
+*/
+
+// const edad = parseInt( prompt("Ingresa tu edad: ") );
+
+// const mensajeValidacion = edad >= 18 ? "El usuario es mayor de edad" : "El usuario no es mayor de edad";
+
+// console.log( mensajeValidacion );
+
+function factorialConRecursividad( numero = 0 ){
+    return numero <= 0 ? 1 : numero * factorialConRecursividad( numero - 1 );
+}
+
+console.log(`El factorial es ${factorialConRecursividad(5)}`);
